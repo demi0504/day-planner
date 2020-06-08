@@ -55,11 +55,12 @@ $(document).ready(function(){
         renderTimeBlocks();
     }
 
-    //Define stored todos
+    //Define store todos
     function storeTodos(){
         localStorage.setItem("todos", JSON.stringify(todosArray));
     }
 
+    //Save button function
     $(".saveBtn").on("click",function(event){
         event.preventDefault(); 
         let index = $(this).attr("data-btnIndex");  
